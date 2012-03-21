@@ -1,6 +1,18 @@
 Store::Application.routes.draw do
+  root :to => "home#index"
 
- root :to => "home#index"
+  resources :user_sessions
+
+  match 'login' => "user_sessions#new", :as => :login
+
+  match 'logout' => "user_sessions#destroy", :as => :logout
+  
+#  resource :account, :controller => "users"
+  
+  resources :users
+
+  match 'signup' => "users#new", :as => :signup
+  
   resources :products
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,0 +1,18 @@
+<%= form_for @user_session, :url => user_sessions_path do |f| %>
+  <h1>Enter your e-mail and password to sign in.</h1>
+  <table>
+    <tr>
+      <td><%= f.label :login %></td>
+      <td><%= f.text_field :login %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :password %></td>
+      <td><%= f.password_field :password %></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><%= f.submit "SIGN IN" %></td>
+    </tr>
+  </table>
+<% end %>
+
