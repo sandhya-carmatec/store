@@ -16,9 +16,12 @@ gem "rails3-generators"
 
 gem "will_paginate", "3.0.pre2"
 
-gem 'jquery-rails', '>= 1.0.12'
-gem 'thinking-sphinx', '2.0.10', :require => 'thinking_sphinx'
-gem 'rails3-jquery-autocomplete'
+#gem 'jquery-rails', '>= 1.0.12'
+#gem 'thinking-sphinx', '2.0.10', :require => 'thinking_sphinx'
+#gem 'rails3-jquery-autocomplete'
+#gem "heroku", "~> 2.21.3"
+#gem 'omniauth'
+
 
 # Use unicorn as the web server
 # gem 'unicorn'
